@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    int sum_of_digit=(a/10)+(a%10);
+    printf("Bird said:%d\n",a);
+    printf("Alice must go in path-%d\n",sum_of_digit);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
