@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+   int n,count=0;
+   scanf("%d",&n);
+   if(n>=1&&n<100000000)
+    {
+       int tem=n;
+     while (tem>0)
+    {
+        tem/=10;
+         count++;
+    }
+      printf("The count of the given integer is: %d",count);
+     }
+    else
+       printf("Enter a Valid Input");   
+    return 0;
+}
