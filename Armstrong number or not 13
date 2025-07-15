@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int n, ori, sum = 0, dig;
+    scanf("%d", &n);
+   if (n>=100&&n<= 999) 
+   {
+        ori= n;
+       while (n > 0) 
+       {
+         dig= n % 10;
+         sum = sum + dig * dig * dig;
+         n /= 10;
+        }
+       if (sum == ori)
+          {
+       printf("Yes\n");
+          }
+       else
+       printf("No\n");
+   } 
+   else
+   {
+      printf("No\n");
+    }
+return 0;
+}
