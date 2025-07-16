@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main()
+{
+     char str[1000];
+     int counted[256] = {0}; 
+     scanf("%[^\n]", str);
+     for (int i = 0; str[i] != '\0'; i++) 
+     {
+      char ch = str[i];
+      if (counted[(unsigned char)ch]) 
+      {
+        continue;
+      }
+       int count=0;
+     for (int j = 0; str[j] != '\0'; j++) 
+     {
+      if (str[j] == ch) 
+       {
+        count++;
+       }
+     }
+     counted[(unsigned char)ch] = 1;
+      printf("%c   %d\n", ch, count);
+      }   
+ return 0;
+}
